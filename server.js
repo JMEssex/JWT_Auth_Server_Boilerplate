@@ -4,18 +4,19 @@ const express			= require('express'),
 			bodyParser	= require('body-parser'),
 			morgan			= require('morgan');
 
-// create express app
+// Create express app
 const app = express();
 
 /***** APP SETUP *****/
-
-
+// Special Middleware
+app.use(morgan('combined'));
+app.use(bodyParser.json({ type: '*/*' }));
 
 /***** SERVER SETUP *****/
 const port		= process.env.PORT || 3090,
 			server	= http.createServer(app);
 
-// listen on port variable
+// Listen on port variable
 server.listen(port, () => {
 	const msg = `Server listening on port ${port}.`
 	const bracket = '='.repeat(msg.length+4)
