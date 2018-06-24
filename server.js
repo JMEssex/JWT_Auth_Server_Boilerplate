@@ -2,8 +2,12 @@
 const express			= require('express'),
 			http				= require('http'),
 			bodyParser	= require('body-parser'),
-      morgan			= require('morgan'),
-      router			= require('./router');
+			morgan			= require('morgan'),
+			router			= require('./router'),
+			mongoose		= require('mongoose');
+
+/***** DB SETUP *****/
+mongoose.connect('mongodb://localhost:27017/auth');
 
 // Create express app
 const app = express();
