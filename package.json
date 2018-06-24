@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Simple boilerplate for server side project authentication.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JMEssex/JWT_Auth_Server_Boilerplate.git"
+  },
+  "keywords": [
+    "JWT",
+    "Server",
+    "Node.js",
+    "Express"
+  ],
+  "author": "JMEssex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JMEssex/JWT_Auth_Server_Boilerplate/issues"
+  },
+  "homepage": "https://github.com/JMEssex/JWT_Auth_Server_Boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.6",
+    "morgan": "^1.9.0"
+  }
+}
